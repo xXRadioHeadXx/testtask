@@ -1,5 +1,7 @@
 package com.testtask.rest_service.model;
 
+import io.swagger.annotations.Api;
+
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
@@ -9,6 +11,7 @@ import java.util.Objects;
 @XmlRootElement
 @Entity
 @Table(name="customer")
+@Api(value="Customer Management System", description="Operations pertaining to customer in Customer Management System")
 public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

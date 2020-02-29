@@ -1,10 +1,13 @@
 package com.testtask.rest_service.model;
 
+import io.swagger.annotations.Api;
+
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
+@Api(value="Author Management System", description="Operations pertaining to author in Author Management System")
 @XmlRootElement
 @Entity
 @Table(name="author")

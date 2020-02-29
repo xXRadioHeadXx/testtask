@@ -1,6 +1,7 @@
 package com.testtask.rest_service.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.annotations.Api;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 @Entity
+@Api(value="Report Management System", description="Report pertaining to customer in Report Management System")
 public class ReportEntity {
     @Id
     @Column(name="pk")

@@ -1,5 +1,6 @@
 package com.testtask.rest_service.model;
 
+import io.swagger.annotations.Api;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import java.util.List;
 @XmlRootElement
 @Entity
 @Table(name="bookorder")
+@Api(value="Order Management System", description="Operations pertaining to order in Order Management System")
 public class BookOrder implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

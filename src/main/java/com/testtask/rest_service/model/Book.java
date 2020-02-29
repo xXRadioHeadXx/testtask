@@ -1,5 +1,7 @@
 package com.testtask.rest_service.model;
 
+import io.swagger.annotations.Api;
+
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
@@ -8,6 +10,7 @@ import java.util.List;
 @XmlRootElement
 @Entity
 @Table(name="book")
+@Api(value="Book Management System", description="Operations pertaining to book in Book Management System")
 public class Book implements Serializable {
     public Book() {
     }
